@@ -8,15 +8,24 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --poll --inspect --transpile-only --ignore-watch node_modules --respawn src/app.ts"
   },
   "devDependencies": {
-    "ts-node-dev": "^1.1.8",
-    "tsconfig-paths": "^3.12.0"
-  },
-  "dependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.5",
     "@types/csv-parse": "^1.2.2",
     "@types/csvtojson": "^2.0.0",
+    "@types/uuid": "^8.3.4",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
     "csv-parse": "^5.0.4",
     "csvtojson": "^2.0.10",
-    "dotenv": "^14.3.2",
-    "typescript": "^4.5.5"
+    "dotenv": "^14.3.2"
   }
 }

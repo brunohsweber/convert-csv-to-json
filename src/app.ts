@@ -1,19 +1,7 @@
-import faker from '@faker-js/faker'
+import { createFakeData } from "functions/createFakeData";
 
-const limit = 30
-let i = 0
+const data = createFakeData();
 
-const data = []
+console.log("ok");
 
-while (i <= limit) {
-
-  data.push({
-    randomName: faker.name.findName(),
-    randomEmail: faker.internet.email()
-  })
-
-  i++
-}
-
-console.table(data)
-
+console.table(data);

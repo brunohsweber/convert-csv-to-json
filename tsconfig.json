@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es5",
     "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "baseUrl": "./src",
     "noEmit": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -9,9 +12,6 @@
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "rootDir": "./",
-    "outDir": "./dist",
-    "baseUrl": "./src",
     "paths": {
       "@modules/*": [
         "modules/*"

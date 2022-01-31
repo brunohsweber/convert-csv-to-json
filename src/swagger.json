@@ -1,0 +1,55 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Convert CSV to JSON Documentation",
+    "description": "This is an API Convert CSV to JSON",
+    "version": "1.0.0",
+    "contact": {
+      "email": "contato@brunoweber.com.br"
+    }
+  },
+  "paths": {
+    "/convert/csv-to-json": {
+      "post": {
+        "tags": [
+          "CSV-to-JSON"
+        ],
+        "summary": "Upload a new CSV",
+        "description": "Upload a new CSV",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Uploaded"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Specification": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
